@@ -15,7 +15,7 @@ import numpy as np
 
 
 # user edit these
-tol = 1e-5
+tol = 1e-3
 
 
 
@@ -82,13 +82,9 @@ if 1:
 if 1:
     for i,v in enumerate(obj.data.vertices):
         pd = pdist(v.co, a, b, c, d)
-        print('p {0},{1},{2} has distance {3} from plane'.format(v.co[0], v.co[1], v.co[2], pd))
+        # print('p {0},{1},{2} has distance {3} from plane'.format(v.co[0], v.co[1], v.co[2], pd))
         
         if pd <= tol:
             v.select = True
 
-        #check = v.co[dir]
-        #if isclose(desired, check, abs_tol=tol):
-            # print("fnd")
-        #    v.select = True
     bpy.ops.object.mode_set(mode = 'EDIT')
