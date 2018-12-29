@@ -16,7 +16,11 @@ To see the output of `print()` run blender from a terminal with `/Applications/b
 
 
 
-
+# To see coords of a vertex
+* go to edit mode with `tab`
+* select a vertex (make sure you are in vertex mode on bottom bar)
+* press `n` to toggle pane
+* look in `vertex` section of new pane (at the top)
 
 
 
