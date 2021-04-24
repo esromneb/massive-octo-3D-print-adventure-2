@@ -23,3 +23,9 @@ I don't know if they exist or where they are.
 # Blender Version
 blender-2.70a-linux-glibc211-x86_64/blender
 
+
+# Layers
+
+FTG-TJ-01          orig frame
+FTG-TJ-02          orig frame
+
