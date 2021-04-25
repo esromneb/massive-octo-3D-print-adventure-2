@@ -28,12 +28,13 @@ blender-2.70a-linux-glibc211-x86_64/blender
 
 FTG-TJ-03 is the final top layer, this means it merges with bool add.
 
-Difference       top neg 2
 Union            Ring pos
+Diff             Ring neg center
 Union            Bar
-Union            SAIDE
-Union            SAIDE.001
-Union            SAIDE.002
+Union            SAIDE BACK
+Union            SAIDE FL
+Union            SAIDE FR
+Union            neg back shave
 Difference       SLOT L
 Difference       SLOT R
 
