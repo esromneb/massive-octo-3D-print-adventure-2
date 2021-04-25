@@ -48,6 +48,11 @@ BAR is a piece FRONT TO BACK HOOPS
 Difference       Bar neg half
 Difference       Bar neg
 Difference       standoffs tail
+Difference       Ring neg cetner a bit taller
+ARRAY
+Union             Cube.001
+
+
 
 
 Cylinder is the little triangular circular cones at the bottom of the hoops.
