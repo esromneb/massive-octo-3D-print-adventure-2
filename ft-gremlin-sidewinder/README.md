@@ -27,5 +27,69 @@ blender-2.70a-linux-glibc211-x86_64/blender
 # Layers
 
 FTG-TJ-01          orig frame
-FTG-TJ-02          orig frame
+FTG-TJ-02          FINAL LAYER
 
+
+Need to build a tree ffs.
+
+FTG-TJ-02 is the final top layer, this means it merges with bool add.
+
+Difference       top neg 2
+Union            Ring pos
+Union            Bar
+Union            SAIDE
+Union            SAIDE.001
+Union            SAIDE.002
+Difference       SLOT L
+Difference       SLOT R
+
+
+BAR is a piece FRONT TO BACK HOOPS
+Difference       Bar neg half
+Difference       Bar neg
+Difference       standoffs tail
+
+
+Cylinder is the little triangular circular cones at the bottom of the hoops.
+?missing but simple, cone
+
+
+
+Ring pos, is ring positive.
+Difference       Ring neg center (WIREFRAME)
+Difference       standoffs
+Difference       Ring Notch neg  (WIREFRAME) is a rectanglar cube, points 2 front of drone
+Difference       standoffs tail
+REMESH           why?
+
+SADIE, side parts of the ring
+?missing could be simple?
+
+standoffs
+Constant offset       Fixed Count: 2, Constant Offset Y: -5.936, No Relative Offset
+Constant offset       Fixed Count: 2, Constant Offset Y: 13.58, No Relative Offset
+
+
+
+
+
+
+Difference       
+Difference       
+Difference       
+Difference       
+Difference       
+Difference       top neg 2
+Difference       top neg 2
+Difference       top neg 2
+Difference       top neg 2
+Difference       top neg 2
+Difference       top neg 2
+Union            
+Union            
+Union            
+Union            
+Union            
+Union            
+Union            
+Union            
