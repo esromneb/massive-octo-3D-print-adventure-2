@@ -24,7 +24,21 @@ I don't know if they exist or where they are.
 blender-2.70a-linux-glibc211-x86_64/blender
 
 
-# Layers
+# New Layers
+
+FTG-TJ-03 is the final top layer, this means it merges with bool add.
+
+Difference       top neg 2
+Union            Ring pos
+Union            Bar
+Union            SAIDE
+Union            SAIDE.001
+Union            SAIDE.002
+Difference       SLOT L
+Difference       SLOT R
+
+
+# Old Layers
 
 FTG-TJ-01          orig frame
 FTG-TJ-02          FINAL LAYER
