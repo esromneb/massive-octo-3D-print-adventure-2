@@ -23,6 +23,9 @@ I don't know if they exist or where they are.
 # Blender Version
 blender-2.70a-linux-glibc211-x86_64/blender
 
+# Print Settings
+I'm using a snap maker. I turned the temps up a bit (as shown in pics). I think maybe the temps I'm using are too high, as the holes melt a bit.  HOWEVER these melted holes are 100 true to the location if you bore them out a bit with a knife.
+
 
 # New Layers
 
