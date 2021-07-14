@@ -1,8 +1,8 @@
 { hue 20 sat 0.8  } r2 
-1 * {hue 40 sat 0.9} 1 * { z -2 } r3 
-1 * {hue 40 sat 0.9} 1 * { z -4 } r4 
+// 1 * {hue 40 sat 0.9} 1 * { z -2 } r3 
+// 1 * {hue 40 sat 0.9} 1 * { z -4 } r4 
 
-rule r2 maxdepth 5 {
+rule r2 maxdepth 25 {
 { s 0.82  rz 10 ry 12 rx -10 x 0.1  }  r2
 // 1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  r2
 1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  r4 
@@ -10,6 +10,7 @@ frame
 
 }
 
+// cubes just in one direction, i did not use
 rule r3 maxdepth 5 {
 { s 0.82   rx -15   }  r3
 // 1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  r2
@@ -17,6 +18,7 @@ rule r3 maxdepth 5 {
 frame
 }
 
+// a few cubes with a sphere in center
 rule r4 maxdepth 5 {
 // { s 0.82   rx -15   }  r4
 // { s 1 } triangle
