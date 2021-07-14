@@ -5,7 +5,7 @@
 rule r2 maxdepth 5 {
 { s 0.82  rz 10 ry 12 rx -10 x 0.1  }  r2
 // 1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  r2
-1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  frame 
+1 * { y -0.50 z 0.5 x 0.63 s 0.25 }  r4 
 frame
 
 }
@@ -18,8 +18,13 @@ frame
 }
 
 rule r4 maxdepth 5 {
-{ s 0.82   rx -15   }  r4
+// { s 0.82   rx -15   }  r4
+// { s 1 } triangle
+// triangle [0,0,0;1,0,0;0.5,0.5,0.5]
+{  s 0.9 } sphere
 frame
+2 * { rx -15 s 0.82 } frame
+
 }
 
 rule frame  {
