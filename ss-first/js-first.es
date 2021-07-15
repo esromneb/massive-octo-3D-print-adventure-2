@@ -14,7 +14,7 @@
 var mm = Math.random() * 3;
 
 hdr = "\
- frame\
+\
 \
  rule frame  {\
  { s 0.1 1.1 0.1 x 5  z 5 } box\
@@ -55,14 +55,37 @@ var arg = i;
 var scale = 3;
 var translate = ((i*Math.PI)-5);
 var trany = 1.5;
-var tranz = 5;
+var tranz = 0;
 var rot1 = 0; //i*90;
 t2 += '{ s 0.1 y ' + (Math.sin(arg)*scale+trany) +  ' x ' + translate + ' z ' + tranz +' rx ' + rot1 + '} box\n';
 }
 
-t2 += '}\n arch \n';
+t2 += '}\n  \n';
+
+ar1 = "\
+ 1 * { z 0.5 } arch\
+ 1 * { z -0.5 ry 180} arch\
+ 1 * { x -0.5 ry 90} arch\
+ 1 * { x 0.5 ry 90} arch\
+ ";
+
+//Builder.append(ar1);
+
+mrg = "\
+ rule mybox {\
+ frame\
+ 1 * { z 0.5 } arch\
+ 1 * { z -0.5 ry 180} arch\
+ 1 * { x -0.5 ry 90} arch\
+ 1 * { x 0.5 ry 90} arch\
+ }";
+
+Builder.append(mrg);
 
 Builder.append(t2);
+Builder.append('\n');
+
+Builder.load('/mnt/overflow/work/massive-octo-3D-print-adventure-2/ss-first/stub1.es');
 
 
 
