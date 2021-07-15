@@ -1,17 +1,34 @@
-#javascript
+const fs = require('fs')
 
-// var Builder = {
-//   'txt': '',
-//   'append': function(x) {
-//     Builder.txt += x;
-//     // console.log(x);
-//   },
-//   'build': function(x) {
-//     console.log(Builder.txt);
-//   }
-// };
+let content = '';
 
-Builder.load('stub1.es');
+var Builder = {
+  'append': function(x) {
+    content += x;
+    // console.log(x);
+  },
+  'build': function(x) {
+    // console.log(Builder.txt);
+  },
+  'load': function(x) {
+    try {
+      const data = fs.readFileSync(x, 'utf8')
+      // console.log(data)
+      content += data + '\n';
+    } catch (err) {
+      console.error(err)
+    }
+  }
+};
+
+
+
+
+
+
+Builder.load('stub2.es');
+
+
 
 var mm = Math.random() * 3;
 
@@ -53,13 +70,13 @@ a = '{ y -1 s ' + mm + b;
 var t2 = 'rule arch{';
 
 for(i = 0; i < Math.PI; i+=0.1) {
-var arg = i;
-var scale = 3;
-var translate = ((i*Math.PI)-5);
-var trany = 1.5;
-var tranz = 0;
-var rot1 = 0; //i*90;
-t2 += '{ s 0.1 y ' + (Math.sin(arg)*scale+trany) +  ' x ' + translate + ' z ' + tranz +' rx ' + rot1 + '} box\n';
+  var arg = i;
+  var scale = 3;
+  var translate = ((i*Math.PI)-5);
+  var trany = 1.5;
+  var tranz = 0;
+  var rot1 = 0; //i*90;
+  t2 += '{ s 0.1 y ' + (Math.sin(arg)*scale+trany) +  ' x ' + translate + ' z ' + tranz +' rx ' + rot1 + '} box\n';
 }
 
 t2 += '}\n  \n';
@@ -87,10 +104,26 @@ Builder.append(mrg);
 Builder.append(t2);
 Builder.append('\n');
 
-// Builder.load('/mnt/overflow/work/massive-octo-3D-print-adventure-2/ss-first/stub1.es');
 
 
 
 
 
-Builder.build()
+
+
+
+
+
+
+
+
+
+
+fs.writeFile('./ss-second.es', content, err => {
+  if (err) {
+    console.error(err)
+    return
+  }
+  //file written successfully
+})
+
