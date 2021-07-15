@@ -56,7 +56,7 @@ rule mybar  {
 }
 
 
-arch
+// arch
 
 rule arch {
 
