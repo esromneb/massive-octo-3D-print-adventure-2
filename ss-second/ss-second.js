@@ -32,30 +32,28 @@ Builder.load('stub2.es');
 
 var mm = Math.random() * 3;
 
-hdr = "\
-\
-\
- rule frame  {\
- { s 0.1 1.1 0.1 x 5  z 5 } box\
- { s 0.1 1.1 0.1 x 5  z -5 } box\
- { s 0.1 1.1 0.1 x -5  z 5 } box\
- { s 0.1 1.1 0.1 x -5  z -5 } box\
-\
-    { s 1 0.1 0.1 y 5  z 5 } box\
- { s 1 0.1 0.1 y 5  z -5 } box\
- { s 1 0.1 0.1 y -5  z 5 } box\
- { s 1 0.1 0.1 y -5  z -5 } box\
-\
- { s 0.1 0.1 1 y 5  x 5 } box\
- { s 0.1 0.1 1 y 5  x -5 } box\
- { s 0.1 0.1 1 y -5  x 5 } box\
- { s 0.1 0.1 1 y -5  x -5 } box\
-}\
-\
-rule mybar  {\
-    { s 1 0.1 0.1 y 5  z 5 } box\
-}\
-";
+hdr = `
+rule frame  {
+ { s 0.1 1.1 0.1 x 5  z 5 } box
+ { s 0.1 1.1 0.1 x 5  z -5 } box
+ { s 0.1 1.1 0.1 x -5  z 5 } box
+ { s 0.1 1.1 0.1 x -5  z -5 } box
+
+ { s 1 0.1 0.1 y 5  z 5 } box
+ { s 1 0.1 0.1 y 5  z -5 } box
+ { s 1 0.1 0.1 y -5  z 5 } box
+ { s 1 0.1 0.1 y -5  z -5 } box
+
+ { s 0.1 0.1 1 y 5  x 5 } box
+ { s 0.1 0.1 1 y 5  x -5 } box
+ { s 0.1 0.1 1 y -5  x 5 } box
+ { s 0.1 0.1 1 y -5  x -5 } box
+}
+
+rule mybar  {
+    { s 1 0.1 0.1 y 5  z 5 } box
+}
+`;
 
 Builder.append(hdr +'\n');
 
@@ -81,12 +79,12 @@ for(i = 0; i < Math.PI; i+=0.1) {
 
 t2 += '}\n  \n';
 
-ar1 = "\
- 1 * { z 0.5 } arch\
- 1 * { z -0.5 ry 180} arch\
- 1 * { x -0.5 ry 90} arch\
- 1 * { x 0.5 ry 90} arch\
- ";
+ar1 = `
+1 * { z 0.5 } arch
+1 * { z -0.5 ry 180} arch
+1 * { x -0.5 ry 90} arch
+1 * { x 0.5 ry 90} arch
+`;
 
 //Builder.append(ar1);
 

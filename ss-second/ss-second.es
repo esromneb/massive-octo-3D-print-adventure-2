@@ -11,7 +11,51 @@ mybox
 }
 
 r2
- rule frame  { { s 0.1 1.1 0.1 x 5  z 5 } box { s 0.1 1.1 0.1 x 5  z -5 } box { s 0.1 1.1 0.1 x -5  z 5 } box { s 0.1 1.1 0.1 x -5  z -5 } box    { s 1 0.1 0.1 y 5  z 5 } box { s 1 0.1 0.1 y 5  z -5 } box { s 1 0.1 0.1 y -5  z 5 } box { s 1 0.1 0.1 y -5  z -5 } box { s 0.1 0.1 1 y 5  x 5 } box { s 0.1 0.1 1 y 5  x -5 } box { s 0.1 0.1 1 y -5  x 5 } box { s 0.1 0.1 1 y -5  x -5 } box}rule mybar  {    { s 1 0.1 0.1 y 5  z 5 } box}
+
+
+
+1 * { y -2  z 0 } rr 
+
+rule rr {
+ // { s 0.1 1.1 0.1 x 5  z 5 } box
+ // { s 0.1 1.1 0.1 x 5  z -5 } box
+ // { s 0.1 1.1 0.1 x -5  z 5 } box
+ // { s 0.1 1.1 0.1 x -5  z -5 } box
+
+ { s 1 0.3 0.01  y 0  z 0 } box
+ // { s 1 0.1 0.1 y 5  z -5 } box
+ // { s 1 0.1 0.1 y -5  z 5 } box
+ // { s 1 0.1 0.1 y -5  z -5 } box
+
+ // { s 0.1 0.1 1 y 5  x 5 } box
+ // { s 0.1 0.1 1 y 5  x -5 } box
+ // { s 0.1 0.1 1 y -5  x 5 } box
+ // { s 0.1 0.1 1 y -5  x -5 } box
+}
+
+
+
+rule frame  {
+ { s 0.1 1.1 0.1 x 5  z 5 } box
+ { s 0.1 1.1 0.1 x 5  z -5 } box
+ { s 0.1 1.1 0.1 x -5  z 5 } box
+ { s 0.1 1.1 0.1 x -5  z -5 } box
+
+ { s 1 0.1 0.1 y 5  z 5 } box
+ { s 1 0.1 0.1 y 5  z -5 } box
+ { s 1 0.1 0.1 y -5  z 5 } box
+ { s 1 0.1 0.1 y -5  z -5 } box
+
+ { s 0.1 0.1 1 y 5  x 5 } box
+ { s 0.1 0.1 1 y 5  x -5 } box
+ { s 0.1 0.1 1 y -5  x 5 } box
+ { s 0.1 0.1 1 y -5  x -5 } box
+}
+
+rule mybar  {
+    { s 1 0.1 0.1 y 5  z 5 } box
+}
+
  rule mybox { frame 1 * { z 0.5 } arch 1 * { z -0.5 ry 180} arch 1 * { x -0.5 ry 90} arch 1 * { x 0.5 ry 90} arch }rule arch{{ s 0.1 y 1.5 x -5 z 0 rx 0} box
 { s 0.1 y 1.7995002499404844 x -4.685840734641021 z 0 rx 0} box
 { s 0.1 y 2.0960079923851835 x -4.371681469282041 z 0 rx 0} box
